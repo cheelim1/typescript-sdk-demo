@@ -17,3 +17,8 @@
 ```
     npx tsc index.ts | node index.js
 ```
+
+### Run in ts fil
+```
+    ts-node filename.ts 
+```
