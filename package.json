@@ -8,7 +8,10 @@
     "dist"
   ],
   "scripts": {
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -19,5 +22,10 @@
   "license": "ISC",
   "dependencies": {
     "@cheelim1/typescript-sdk-demo2": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1.2",
+    "jest": "^29.2.0",
+    "ts-jest": "^29.0.3"
   }
 }

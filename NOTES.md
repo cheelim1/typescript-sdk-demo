@@ -18,6 +18,8 @@ npm publish --access=public
 npm version patch
 **Our preversion, version, and postversion will run, create a new tag in git and push it to our remote repository. Now publish again: **
 
+npm run lint
+npm run format
 npm publish
 ```
 
